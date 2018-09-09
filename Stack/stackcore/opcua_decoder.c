@@ -25,7 +25,7 @@ OpcUa_Void OpcUa_Decoder_Close(
     struct _OpcUa_Decoder* a_pDecoder,
     OpcUa_Handle* a_phDecodeContext)
 {
-    if (a_pDecoder != OpcUa_Null && a_pDecoder->Delete != OpcUa_Null)
+    if (a_pDecoder != OpcUa_Null && a_pDecoder->Close != OpcUa_Null)
     {
         a_pDecoder->Close(a_pDecoder, a_phDecodeContext);
     }
