@@ -24,7 +24,7 @@ OpcUa_Void OpcUa_Encoder_Close(
     struct _OpcUa_Encoder*  a_pEncoder,
     OpcUa_Handle*           a_phEncodeContext)
 {
-    if (a_pEncoder != OpcUa_Null && a_pEncoder->Delete != OpcUa_Null)
+    if (a_pEncoder != OpcUa_Null && a_pEncoder->Close != OpcUa_Null)
     {
         a_pEncoder->Close(a_pEncoder, a_phEncodeContext);
     }
